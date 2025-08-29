@@ -1,5 +1,5 @@
 # Inspired from https://github.com/actions/starter-workflows/blob/main/pages/nextjs.yml
-name: GitHub Pages
+name: GitHub-Pages
 
 on:
   push:
@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: 'pages'
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
